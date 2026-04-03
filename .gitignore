@@ -1,0 +1,42 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database exports
+*.sql.gz
+*.sql.zip
+dump.sql
+backup_*.sql
+
+# Credentials
+.env
+*.env
+config.json
+secrets.sql
+
+# Logs
+*.log
+mysql.log
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
