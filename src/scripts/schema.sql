@@ -92,8 +92,7 @@ CREATE TABLE Duty_Schedule
         End_Time         TIME    NOT NULL,
         CONSTRAINT Duty_Schedule_PK PRIMARY KEY (Duty_Schedule_ID),
         CONSTRAINT Duty_Schedule_FK_Employee 
-            FOREIGN KEY (Employee_ID) REFERENCES Employee(Employee_ID) ON DELETE CASCADE,
-        CONSTRAINT Duty_Schedule_Check_Time CHECK (End_Time > Start_Time)
+            FOREIGN KEY (Employee_ID) REFERENCES Employee(Employee_ID) ON DELETE CASCADE
     )
 ;
 
