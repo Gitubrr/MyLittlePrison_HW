@@ -3,10 +3,18 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build](https://img.shields.io/github/actions/workflow/status/Gitubrr/GoSymGym/build_and_lint.yaml?label=build&job=build)](https://github.com/Gitubrr/MyLittlePrison_HW/actions/workflows/build.yaml)
 
-Database for a pet salon
+Prison database
 
 ## Database structure
 
+- **Prisoner** — prisoners
+- **Criminal_Code_Article** — criminal code articles
+- **Prisoner_Article** — prisoner convictions (many-to-many with articles)
+- **Employee** — prison staff
+- **Visit** — prisoner visits
+- **Conscription** — disciplinary violations
+- **Punishment** — penalties for violations (one-to-one with Conscription)
+- **Duty_Schedule** — employee duty schedules
 
 ## ERD diagram
 
