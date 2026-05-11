@@ -1,0 +1,11 @@
+CREATE UNIQUE INDEX Prisoner_ID_UINDEX ON Prisoner(Prisoner_ID);
+CREATE INDEX Prisoner_Last_Name_IDX ON Prisoner(Last_Name);
+CREATE INDEX Prisoner_Block_IDX ON Prisoner(Block);
+CREATE INDEX Visit_Date_IDX ON Visit(Visit_Date);
+CREATE INDEX Employee_Last_Name_IDX ON Employee(Last_Name);
+CREATE INDEX Prisoner_Block_Room_IDX ON Prisoner(Block, Room);
+CREATE INDEX Visit_Prisoner_Date_IDX ON Visit(Prisoner_ID, Visit_Date);
+CREATE INDEX Prisoner_Last_First_IDX ON Prisoner(Last_Name, First_Name);
+CREATE INDEX idx_conscription_prisoner ON Conscription(Prisoner_ID);
+CREATE INDEX idx_prisoner_article_links ON Prisoner_Article(Prisoner_ID, Article_ID);
+CREATE INDEX idx_duty_schedule_employee ON Duty_Schedule(Employee_ID);
